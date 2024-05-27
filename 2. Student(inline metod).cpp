@@ -25,12 +25,10 @@ public:
 	}
 	~Student()
 	{
-		if (name != nullptr)
-		{
-			delete[] name;
-		}
+		
+		delete[] name;
+		
 		cout << "Destruct\n";
-		Sleep(1000);
 		
 	}
 
